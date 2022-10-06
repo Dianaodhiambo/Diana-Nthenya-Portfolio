@@ -34,7 +34,6 @@ const Services = () => {
                 detail={"Html, Css, JavaScript, React, Ruby"}
                 />
             </div>
-        
              <div style={{top: "19rem", left: "16rem"}}>
                 <Card
                 heading= {"Tour Consultant"}
