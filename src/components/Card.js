@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const Card = ({color, detail, heading}) => {
   return (
     <div className="card" style={{borderColor: {color}}}> 
