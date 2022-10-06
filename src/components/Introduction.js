@@ -39,10 +39,9 @@ const Introduction=()=>{
             left: "-9rem",
           }}
         ></div>
-        
+
     </div>
     </div>
   )
 }
-
 export default Introduction
