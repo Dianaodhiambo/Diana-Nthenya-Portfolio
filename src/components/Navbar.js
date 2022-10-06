@@ -31,7 +31,6 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-
             <Link to="Contact" spy={true} smooth={true}>
             <button className='button n-button'>
                 Contact
