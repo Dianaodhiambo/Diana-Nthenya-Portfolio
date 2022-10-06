@@ -16,10 +16,13 @@ const Services = () => {
                 <br/>
                 clean, elegant and efficient code.
             </span>
+          
             <a href={Resume} download>
-            
+            <button className="button s-button">Download CV</button>
             </a>
             <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+            
+            
            </div>
         <div className='cards'>
             <div style ={{left: '16rem'}}>
