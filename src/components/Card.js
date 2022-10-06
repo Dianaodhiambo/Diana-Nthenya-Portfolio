@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Card = ({heading, detail, color}) => {
+const Card = ({color, detail, heading}) => {
   return (
     <div className="card" style={{borderColor: {color}}}> 
       <span>{heading}</span>
