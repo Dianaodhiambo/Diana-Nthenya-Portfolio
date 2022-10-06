@@ -25,7 +25,6 @@ function Portfolio() {
         }
       );
   }
-
   useEffect(() => {
     fetch("https://api.github.com/users/Dianaodhiambo")
       .then((res) => res.json())
