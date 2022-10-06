@@ -335,10 +335,9 @@
 .contact-form{
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 200vh;
+  height: 100vh;
   margin-top: 0rem;
   padding-top: 3rem;
-  justify-content: left;
 }
 
 .c-right{
@@ -346,22 +345,20 @@
   justify-content: center;
   position: relative;
   flex: 1;
+ 
 }
 
 .c-right>form
 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
- justify-items: center;
-  
+  gap: 1rem; 
 }
 
-.c-right .user{
+.c-right.{
   width: 20rem;
   height: 2rem;
-  padding: 0.3em;
+  padding: 0.3rem;
   outline: none;
   border: 2px solid var(--orange);
   border-radius: 28px;

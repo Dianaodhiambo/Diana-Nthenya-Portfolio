@@ -1,4 +1,4 @@
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
@@ -8,14 +8,14 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_taykou3",
-        "Ytemplate_w0bdob2",
+        "template_w0bdob2",
         form.current,
-        "YMHKlEejZ7_pPve3BQ"
+        "MHKlEejZ7_pPve3BQ"
       )
       .then(
         (result) => {
           console.log(result.text);
-          form.reset();
+          
         },
         (error) => {
           console.log(error.text);
@@ -25,23 +25,26 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id="Contact">
-      <div className="w-left">
-        <div className="Awesome">
-          <span>Get in Touch <br/></span>
-          <span>Contact me</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
+    <div className="w-left">
+      <div className="Awesome">
+        <span>Get in Touch <br/></span>
+        <span>Contact me</span>
+        <div
+          className="blur s-blur1"
+          style={{ background: "#ABF1FF94" }}
+        ></div>
       </div>
-     
+    </div>
+      {/* right side form */}
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
+      <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)"}}
@@ -53,4 +56,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
 

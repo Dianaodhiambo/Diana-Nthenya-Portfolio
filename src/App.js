@@ -18,10 +18,6 @@ function App() {
      <Experience/>
      <Portfolio/>
      <Contact/>
-     
-     
-     
-     
       
     </div>
     
